@@ -51,6 +51,7 @@ struct ContentView: View {
                     Button("Change Filter") { showingFilterSheet = true }
                     Spacer()
                     Button("Save", action: save)
+                        .disabled(image == nil)
                 }
             }
             .padding([.horizontal, .bottom])
